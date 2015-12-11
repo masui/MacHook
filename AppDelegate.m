@@ -29,8 +29,8 @@ BOOL checkAccessibility()
   [NSEvent addGlobalMonitorForEventsMatchingMask:NSScrollWheelMask
 					 handler:^(NSEvent *event){
       NSLog(@"scroll: %f %f %f", event.deltaX, event.deltaY, event.deltaZ);
-
-    }];
+    }
+  ];
 }
 
 @end
